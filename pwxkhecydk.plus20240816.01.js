@@ -560,6 +560,7 @@ async function l(e, t) {
 }
 async function c(e, t) {
     const n = a.utils.httpGetAs(t);
+    alert("test01");
     console.log(`投稿の数:${n.body.items.length}`);
     for (const t of n.body.items) {
         if (!e.isLimitValid()) break;
